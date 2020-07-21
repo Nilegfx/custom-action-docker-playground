@@ -1,0 +1,11 @@
+{
+  "name": "custom-action-docker-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Nilegfx/custom-action-docker-playground.git",
+  "author": "<great.nile@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^15.4.1"
+  }
+}
