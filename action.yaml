@@ -2,20 +2,16 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  kubeconfig:  # id of input
+    description: 'kube secret'
     required: true
-    default: 'World'
-  greeting-message:  # id of input
-    description: 'greeting message'
-    required: true
-    default: 'Hi'
+  
 outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
+  # args:
     # - ${{ inputs.who-to-greet }}
-    - '--name=${{ inputs.who-to-greet }}'
+    # - '--name=${{ inputs.who-to-greet }}'

@@ -8,8 +8,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - run: yarn    
-      - name: Hello world action step
-        id: hello
+      - name: deploy to playground
+        id: deploy
         uses: ./
         with:
-          who-to-greet: 'Mona the Octocat'
+          kubeconfig: ${{ secrets.KUBE_CONFIG }}
